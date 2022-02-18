@@ -1,7 +1,7 @@
 .env
 build/
 allure-report/
-
+src
 ConfigDumpInfo.xml
 build
 out
