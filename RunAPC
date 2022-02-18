@@ -1,0 +1,2 @@
+chcp 65001
+vrunner run --command "acc.catalog=.;acc.propertiesPaths=./tools/acc-export/acc.properties;" --execute "./tools/acc-export/acc-export.epf" --ordinaryapp=1

@@ -1,0 +1,2 @@
+@rem SET LOGOS_LEVEL=DEBUG
+@call vrunner run --settings ".\tools\acc-export\acc-env.json" --command "acc.propertiesPaths=.\tools\acc-export\acc.properties;" --execute ".\tools\acc-export\acc-export.epf"

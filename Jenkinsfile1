@@ -1,0 +1,106 @@
+pipeline
+{
+    agent {
+        label 'OneS'
+    }
+    
+    environment {
+        envString = 'true'
+    }
+ 
+    post {
+        always {
+            allure includeProperties: false, jdk: '', results: [[path: 'out/syntax-check/allure'], [path: 'out/smoke/allure'], [path: 'build/allure'], [path: 'build/tests/allure']]
+            junit allowEmptyResults: true, testResults: 'out/syntax-check/junit/junit.xml'
+            junit allowEmptyResults: true, testResults: 'out/junitreport/*.xml'
+            junit allowEmptyResults: true, testResults: 'out/smoke/junit/*.xml'
+            junit allowEmptyResults: true, testResults: 'build/tests/junit/*.xml'
+        }
+    
+        failure {
+            bat "echo failure"
+        }
+        
+        success {
+            bat "echo success"      
+        }
+    }
+    stages {
+        stage("Создание тестовой базы") {
+            steps {
+                bat "chcp 65001 \n vrunner init-dev --dt C:/Repo/Test7/Base.dt --db-user Администратор --src ./src/cf"
+ 
+            }
+        }
+        stage("Синтаксический контроль") {
+            steps {
+                bat "chcp 65001 \n vrunner syntax-check"
+ 
+            }
+        }
+        stage("Дымовые тесты") {
+            steps {
+                script{
+                    try {
+                        bat "chcp 65001\n runner xunit"
+                    } catch(Exception Exc) {
+                         currentBuild.result = 'UNSTABLE'
+                    }
+                }
+ 
+            }
+        }
+        stage("Модульные тесты") {
+            steps {
+                script{
+                    try {
+                        bat """chcp 65001
+                        call vrunner compileepf tests tests
+                        call runner xunit --settings ./env-test.json"""
+                    } catch(Exception Exc) {
+                         currentBuild.result = 'UNSTABLE'
+                    }
+                }
+ 
+            }
+        }
+        stage("vanessa") {
+            steps {
+                script{
+                    try {
+                        bat "chcp 65001\n runner vanessa"
+                    } catch(Exception Exc) {
+                         currentBuild.result = 'UNSTABLE'
+                    }
+                }
+ 
+            }
+        }
+        stage("АПК") {
+            steps {
+                script{
+                    try {
+                        bat "chcp 65001\n runner run --ibconnection /FC:/Project/_TypeCfg/ACC --db-user \"Админ\" --db-pwd \"\"  --command \"acc.catalog=${WORKSPACE};acc.propertiesPaths=./tools/acc-export/acc.properties;\" --execute \"./tools/acc-export/acc-export.epf\" --ordinaryapp=1"
+                    } catch(Exception Exc) {
+                         currentBuild.result = 'UNSTABLE'
+                    }
+                }
+ 
+            }
+        }
+        stage("Sonar") {
+            steps {
+                script{
+                    scannerHome = tool 'sonar-scaner'
+                    
+                }
+                withSonarQubeEnv ("sonar") {
+                bat "${scannerHome}/bin/sonar-scanner -D sonar.login=4a97768be686c29937653f4bb8b7fbc122362cee -D sonar.projectVersion=${BUILD_ID}"
+                }
+ 
+            }
+        }
+
+    
+    }
+}

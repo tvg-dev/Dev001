@@ -1,0 +1,15 @@
+{
+    "$schema": "https://raw.githubusercontent.com/vanessa-opensource/vanessa-runner/develop/vanessa-runner-schema.json",
+    "default": {
+        "--ibconnection": "/FD:/Dev/ACC",
+        "--db-user": "ci-bot",
+        "--db-pwd": "123",
+        "--root": ".",
+        "--workspace": ".",
+        "--v8version": "8.3.18.1483",
+        "--locale": "ru",
+        "--language": "ru",
+        "--additional": "",
+        "--ordinaryapp": "1"
+    }
+}

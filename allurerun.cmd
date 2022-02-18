@@ -1,0 +1,1 @@
+call allure generate --clean .\build\allure .\build\tests\allure .\out\syntax-check\allure -o .\out\allure\allure-report && allure open .\out\allure\allure-report
