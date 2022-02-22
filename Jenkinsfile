@@ -26,13 +26,13 @@ pipeline
         }
     }
     stages {
-        stage("Синтаксический контроль") {
+        stage("syntax-check") {
             steps {
                 bat "chcp 65001 \n vrunner syntax-check"
  
             }
         }
-        stage("Дымовые тесты") {
+        stage("Smoke test") {
             steps {
                 script{
                     try {
