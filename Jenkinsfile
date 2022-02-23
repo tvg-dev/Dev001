@@ -10,11 +10,9 @@ pipeline
  
     post {
         always {
-            allure includeProperties: false, jdk: '', results: [[path: 'out/syntax-check/allure'], [path: 'out/smoke/allure'], [path: 'build/allure'], [path: 'build/tests/allure']]
+            allure includeProperties: false, jdk: '', results: [[path: 'out/syntax-check/allure'], [path: 'out/smoke/allure']]
             junit allowEmptyResults: true, testResults: 'out/syntax-check/junit/junit.xml'
-            junit allowEmptyResults: true, testResults: 'out/junitreport/*.xml'
             junit allowEmptyResults: true, testResults: 'out/smoke/junit/*.xml'
-            junit allowEmptyResults: true, testResults: 'build/tests/junit/*.xml'
         }
     
         failure {
@@ -28,7 +26,11 @@ pipeline
     stages {
         stage("syntax-check") {
             steps {
-                bat "chcp 65001 \n vrunner syntax-check"
+                try {
+                    bat "chcp 65001 \n vrunner syntax-check"
+                } catch(Exception Exc) {
+                        currentBuild.result = 'UNSTABLE'
+                }
  
             }
         }

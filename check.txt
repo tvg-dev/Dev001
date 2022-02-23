@@ -4,7 +4,9 @@ Active code page: 65001
 
 E:\Dev\Dev001>SET LOGOS_LEVEL=DEBUG 
 
-E:\Dev\Dev001>vrunner syntax-check 
+E:\Dev\Dev001>del /Q .\out\syntax-check\allure\*.* 
+
+E:\Dev\Dev001>call vrunner syntax-check 
 ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьИменованныйПараметр: ИмяПараметра <--ibconnection>
 ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьИменованныйПараметр: ИмяПараметра <--db-user>
 ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьИменованныйПараметр: ИмяПараметра <--db-pwd>
@@ -274,406 +276,10 @@ vanessa-runner v1.10.2
 ОТЛАДКА - [o.app.vanessa-runner] - Не задан путь к файлу настроек, использую путь по умолчанию E:/Dev/Dev001\env.json
 ОТЛАДКА - [o.app.vanessa-runner] - Читаю настройки из json-файла E:/Dev/Dev001\env.json
 ОТЛАДКА - [o.app.vanessa-runner] - Читаю из файла E:/Dev/Dev001\env.json
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--groupbymetadata> = <Да>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--exception-file> = <./tools/syntax-check-excludes.txt>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--junitpath> = <./out/syntax-check/junit/junit.xml>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--allure-results2> = <./out/syntax-check/allure>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--mode> = <Массив>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--ibconnection> = </FD:\Base\Dev001>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--db-user> = <ci-bot>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--db-pwd> = <123>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--root> = <.>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--workspace> = <.>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--v8version> = <8.3.18.1483>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--locale> = <ru>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--language> = <ru>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--additional> = </DisplayAllFunctions /Lru  /iTaxi /TESTMANAGER>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--ordinaryapp> = <-1>
-ОТЛАДКА - [o.app.vanessa-runner] - СтрокаПодключения /FD:\Base\Dev001
-ОТЛАДКА - [o.app.vanessa-runner] - Использован системный корневой путь проекта - <.>
-ОТЛАДКА - [o.app.vanessa-runner] - Дополненная строка подключения /F"D:\Base\Dev001"
-ОТЛАДКА - [o.app.vanessa-runner] - Добавляю шаблонную переменную workspaceRoot, значение <.>
-ОТЛАДКА - [o.app.vanessa-runner] - Добавляю шаблонную переменную runnerRoot, значение <C:\Program Files\OneScript\lib\vanessa-runner\src\Модули\..\..>
-ОТЛАДКА - [o.app.vanessa-runner] - Подключил вывод отладочного лога в отдельный файл C:\Users\vtereshchenko\AppData\Local\Temp\18\vrunner-1lvymthh.5dk.log
-ОТЛАДКА - [o.app.vanessa-runner] - Проверяю путь <./out/syntax-check/junit/junit.xml>
-ОТЛАДКА - [o.app.vanessa-runner] - Определили проверяемый путь <.\out\syntax-check\junit\>
-ОТЛАДКА - [o.app.vanessa-runner] - Проверяю путь <./out/syntax-check/allure>
-ОТЛАДКА - [o.app.vanessa-runner] - Определили проверяемый путь <E:\Dev\Dev001\out\syntax-check\allure>
-ОТЛАДКА - [oscript.lib.v8find] - Читаю конфигурационный файл C:\ProgramData\1C\1CEStart\1CEStart.cfg.
-ОТЛАДКА - [oscript.lib.v8find] - Читаю конфигурационный файл C:\Users\vtereshchenko\AppData\Roaming\1C\1CEStart\1CEStart.cfg.
-ОТЛАДКА - [oscript.lib.v8find] - Выполняем поиск расположения конфигурационного файла для учебной версии платформы.
-ОТЛАДКА - [oscript.lib.v8find] - Конфигурационный файл C:\ProgramData\1C\1CEStartt\1CEStart.cfg не найден.
-ОТЛАДКА - [oscript.lib.v8find] - Конфигурационный файл C:\Users\vtereshchenko\AppData\Roaming\1C\1CEStartt\1CEStart.cfg не найден.
-ОТЛАДКА - [oscript.lib.v8find] - Поиск платформы в <5> каталогах
-ОТЛАДКА - [oscript.lib.v8find] - Поиск версий платформы в <C:\Program Files\1Cv8>
-ОТЛАДКА - [oscript.lib.v8find] - Версия платформы не передана. Выполняю поиск в подкаталогах
-ОТЛАДКА - [oscript.lib.v8find] - Количество <5> версий платформы в под каталогах
-ОТЛАДКА - [oscript.lib.v8find] - Создаю версию <8.3.18.1208>
-ОТЛАДКА - [oscript.lib.v8find] - Создаю версию <8.3.18.1208_>
-ОТЛАДКА - [oscript.lib.v8find] - Создаю версию <8.3.18.1289>
-ОТЛАДКА - [oscript.lib.v8find] - Создаю версию <8.3.18.1433>
-ОТЛАДКА - [oscript.lib.v8find] - Создаю версию <8.3.18.1483>
-ОТЛАДКА - [oscript.lib.v8find] - Поиск версий платформы в <C:\Program Files\1Cv82>
-ОТЛАДКА - [oscript.lib.v8find] - Поиск версий платформы в <C:\Program Files (x86)\1Cv8>
-ОТЛАДКА - [oscript.lib.v8find] - Версия платформы не передана. Выполняю поиск в подкаталогах
-ОТЛАДКА - [oscript.lib.v8find] - Количество <0> версий платформы в под каталогах
-ОТЛАДКА - [oscript.lib.v8find] - Поиск версий платформы в <C:\Program Files (x86)\1Cv8t>
-ОТЛАДКА - [oscript.lib.v8find] - Поиск версий платформы в <C:\Program Files (x86)\1Cv82>
-ОТЛАДКА - [oscript.lib.stream] - Кэш колонок содержит 7 колонок
-ОТЛАДКА - [oscript.lib.stream] - Установлена коллекция размером 5
-ОТЛАДКА - [oscript.lib.stream] - Сортировать СортироватьПоВерсиям
-ОТЛАДКА - [oscript.lib.stream] - Фильтровать ОбработкаОповещения
-ОТЛАДКА - [oscript.lib.stream] - ЛюбойСоответствует
-ОТЛАДКА - [oscript.lib.stream] - Прохожу по конвейеру
-ОТЛАДКА - [oscript.lib.stream] - Выполняю ячейку конвейера ВыполнитьСортировать
-ОТЛАДКА - [oscript.lib.stream] - Размер коллекции 5
-ОТЛАДКА - [oscript.lib.stream] - ВыполнитьСортировать СортироватьПоВерсиям
-ОТЛАДКА - [oscript.lib.stream] - Выполняю ячейку конвейера ВыполнитьФильтровать
-ОТЛАДКА - [oscript.lib.stream] - Размер коллекции 5
-ОТЛАДКА - [oscript.lib.stream] - ВыполнитьФильтровать ОбработкаОповещения
-ОТЛАДКА - [oscript.lib.stream] - Фильтровать ОбработкаОповещения
-ОТЛАДКА - [oscript.lib.stream] - ПолучитьПервый
-ОТЛАДКА - [oscript.lib.stream] - Прохожу по конвейеру
-ОТЛАДКА - [oscript.lib.stream] - Выполняю ячейку конвейера ВыполнитьФильтровать
-ОТЛАДКА - [oscript.lib.stream] - Размер коллекции 5
-ОТЛАДКА - [oscript.lib.stream] - ВыполнитьФильтровать ОбработкаОповещения
-ОТЛАДКА - [oscript.lib.v8runner] - КлючСоединенияСБазой /F"D:\Base\Dev001"
-ОТЛАДКА - [oscript.lib.v8runner] - ИмяПользователя <ci-bot>
-ОТЛАДКА - [oscript.lib.v8runner] -  Задан пароль 123
-ОТЛАДКА - [oscript.lib.stream] - Кэш колонок содержит 7 колонок
-ОТЛАДКА - [oscript.lib.stream] - Установлена коллекция размером 1
-ОТЛАДКА - [oscript.lib.stream] - Сортировать СортироватьПоВерсиям
-ОТЛАДКА - [oscript.lib.stream] - Фильтровать ОбработкаОповещения
-ОТЛАДКА - [oscript.lib.stream] - ЛюбойСоответствует
-ОТЛАДКА - [oscript.lib.stream] - Прохожу по конвейеру
-ОТЛАДКА - [oscript.lib.stream] - Выполняю ячейку конвейера ВыполнитьСортировать
-ОТЛАДКА - [oscript.lib.stream] - Размер коллекции 1
-ОТЛАДКА - [oscript.lib.stream] - ВыполнитьСортировать СортироватьПоВерсиям
-ОТЛАДКА - [oscript.lib.stream] - Выполняю ячейку конвейера ВыполнитьФильтровать
-ОТЛАДКА - [oscript.lib.stream] - Размер коллекции 1
-ОТЛАДКА - [oscript.lib.stream] - ВыполнитьФильтровать ОбработкаОповещения
-ОТЛАДКА - [oscript.lib.stream] - ПолучитьПервый
-ОТЛАДКА - [oscript.lib.stream] - Прохожу по конвейеру
-ИНФОРМАЦИЯ - [o.app.vanessa-runner] - Начало проверки проекта
-ИНФОРМАЦИЯ - [o.app.vanessa-runner] - Выполняю синтакс-контроль конфигурации
-ОТЛАДКА - [oscript.lib.v8runner] - КлючСоединенияСБазой /F"D:\Base\Dev001"
-ОТЛАДКА - [oscript.lib.v8runner] - ИмяПользователя <ci-bot>
-ОТЛАДКА - [oscript.lib.v8runner] - Проверяю равенство КлючСоединенияСБазой() = КлючВременногоКонтекста() и Не ВременнаяБазаСуществует()
-ОТЛАДКА - [oscript.lib.v8runner] - КлючСоединенияСБазой() /F"D:\Base\Dev001"
-ОТЛАДКА - [oscript.lib.v8runner] - КлючВременногоКонтекста() /F"C:\Users\vtereshchenko\AppData\Local\Temp\18\u45qmeib.oo1.tmp\v8r_TempDB"
-ОТЛАДКА - [oscript.lib.v8runner] - ВременнаяБазаСуществует() Нет
-ОТЛАДКА - [oscript.lib.v8runner] - Равенство не выполняется.
-ОТЛАДКА - [oscript.lib.v8runner] - "C:\Program Files\1Cv8\8.3.18.1483\bin\1cv8.exe" DESIGNER /F"D:\Base\Dev001" /Out "C:\Users\vtereshchenko\AppData\Local\Temp\18\u45qmeib.oo1.tmp\0ls4ofqr.3r2.txt" /N"ci-bot" /Lru /VLru /DisableStartupMessages /DisableStartupDialogs /CheckConfig -ConfigLogIntegrity -IncorrectReferences -ThinClient -WebClient -Server -ExternalConnection -ThickClientOrdinaryApplication -ExtendedModulesCheck -CheckUseModality -UnreferenceProcedures -UnsupportedFunctional -AllExtensions
-ОТЛАДКА - [oscript.lib.commands] - РабочийКаталог: .
-ОТЛАДКА - [oscript.lib.commands] - Строка запуска <"C:\Program Files\1Cv8\8.3.18.1483\bin\1cv8.exe" DESIGNER /F"D:\Base\Dev001" /Out "C:\Users\vtereshchenko\AppData\Local\Temp\18\u45qmeib.oo1.tmp\0ls4ofqr.3r2.txt" /N"ci-bot" /Lru /VLru /DisableStartupMessages /DisableStartupDialogs /CheckConfig -ConfigLogIntegrity -IncorrectReferences -ThinClient -WebClient -Server -ExternalConnection -ThickClientOrdinaryApplication -ExtendedModulesCheck -CheckUseModality -UnreferenceProcedures -UnsupportedFunctional -AllExtensions>
-ОТЛАДКА - [oscript.lib.commands] - Полная строка запуска <"C:\Program Files\1Cv8\8.3.18.1483\bin\1cv8.exe" DESIGNER /F"D:\Base\Dev001" /Out "C:\Users\vtereshchenko\AppData\Local\Temp\18\u45qmeib.oo1.tmp\0ls4ofqr.3r2.txt" /N"ci-bot" /P"123" /Lru /VLru /DisableStartupMessages /DisableStartupDialogs /CheckConfig -ConfigLogIntegrity -IncorrectReferences -ThinClient -WebClient -Server -ExternalConnection -ThickClientOrdinaryApplication -ExtendedModulesCheck -CheckUseModality -UnreferenceProcedures -UnsupportedFunctional -AllExtensions>
-ОТЛАДКА - [oscript.lib.commands] - Строка запуска <"C:\Program Files\1Cv8\8.3.18.1483\bin\1cv8.exe" DESIGNER /F"D:\Base\Dev001" /Out "C:\Users\vtereshchenko\AppData\Local\Temp\18\u45qmeib.oo1.tmp\0ls4ofqr.3r2.txt" /N"ci-bot" /Lru /VLru /DisableStartupMessages /DisableStartupDialogs /CheckConfig -ConfigLogIntegrity -IncorrectReferences -ThinClient -WebClient -Server -ExternalConnection -ThickClientOrdinaryApplication -ExtendedModulesCheck -CheckUseModality -UnreferenceProcedures -UnsupportedFunctional -AllExtensions>
-ОТЛАДКА - [oscript.lib.commands] - Полная строка запуска <"C:\Program Files\1Cv8\8.3.18.1483\bin\1cv8.exe" DESIGNER /F"D:\Base\Dev001" /Out "C:\Users\vtereshchenko\AppData\Local\Temp\18\u45qmeib.oo1.tmp\0ls4ofqr.3r2.txt" /N"ci-bot" /P"123" /Lru /VLru /DisableStartupMessages /DisableStartupDialogs /CheckConfig -ConfigLogIntegrity -IncorrectReferences -ThinClient -WebClient -Server -ExternalConnection -ThickClientOrdinaryApplication -ExtendedModulesCheck -CheckUseModality -UnreferenceProcedures -UnsupportedFunctional -AllExtensions>
-ОТЛАДКА - [oscript.lib.commands] - Длина вывода 0, количество строк 1
-ОТЛАДКА - [oscript.lib.commands] - Код возврата равен 0
-ОТЛАДКА - [oscript.lib.v8runner] - Получен код возврата 0
-ОТЛАДКА - [oscript.lib.v8runner] - Это внешний файл информации: Нет
-ОТЛАДКА - [oscript.lib.v8runner] - Очищать файл информации: Да
-ОТЛАДКА - [oscript.lib.v8runner] - Удаляю файл информации 1С
-ОТЛАДКА - [oscript.lib.v8runner] - файл информации:
-Ошибок не обнаружено
-
-ОТЛАДКА - [oscript.lib.v8runner] - Код возврата равен 0
-ИНФОРМАЦИЯ - [o.app.vanessa-runner] - Результат синтакс-контроля: Ошибок не обнаружено
-
-ИНФОРМАЦИЯ - [o.app.vanessa-runner] - Проверка проекта завершена за 2с
-ОТЛАДКА - [o.app.vanessa-runner] - Чтение файла исключений ошибок из ./tools/syntax-check-excludes.txt
-ОТЛАДКА - [o.app.vanessa-runner] - Прочитано исключений: 0
-ОТЛАДКА - [o.app.vanessa-runner] - ОбработанныйЛог Ошибок не обнаружено
-
-ОТЛАДКА - [o.app.vanessa-runner] - ЛогПроверкиИзКонфигуратора Ошибок не обнаружено
-
-ИНФОРМАЦИЯ - [o.app.vanessa-runner] - Генерация отчета Allure2
-ИНФОРМАЦИЯ - [o.app.vanessa-runner] - Генерация отчета JUnit
-
-E:\Dev\Dev001>chcp 65001 
-Active code page: 65001
-
-E:\Dev\Dev001>SET LOGOS_LEVEL=DEBUG 
-
-E:\Dev\Dev001>vrunner syntax-check 
-ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьИменованныйПараметр: ИмяПараметра <--ibconnection>
-ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьИменованныйПараметр: ИмяПараметра <--db-user>
-ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьИменованныйПараметр: ИмяПараметра <--db-pwd>
-ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьИменованныйПараметр: ИмяПараметра <--v8version>
-ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьИменованныйПараметр: ИмяПараметра <--root>
-ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьИменованныйПараметр: ИмяПараметра <--ordinaryapp>
-ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьПараметрФлаг: ИмяПараметра <--nocacheuse>
-ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьИменованныйПараметр: ИмяПараметра <--ibname>
-ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьИменованныйПараметр: ИмяПараметра <--language>
-ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьИменованныйПараметр: ИмяПараметра <--locale>
-ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьИменованныйПараметр: ИмяПараметра <--uccode>
-ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьИменованныйПараметр: ИмяПараметра <--settings>
-ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьИменованныйПараметр: ИмяПараметра <--debuglogfile>
-ОТЛАДКА - [oscript.lib.cmdline] - ДобавитьПараметрФлаг: ИмяПараметра <--debuglog>
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр Команда
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр Команда
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --src
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --dt
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --dev
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --storage
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-name
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-user
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-pwd
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-ver
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --v1
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --v2
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --src
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --dt
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --dev
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --storage
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-name
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-user
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-pwd
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-ver
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --v1
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --v2
-ОТЛАДКА - [o.app.vanessa-runner] - Добавляю шаблонную переменную addRoot, значение <C:\Program Files\OneScript\lib\add>
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр testsPath
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --workspace
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --config-tests
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --pathxunit
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --reportsxunit
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --xddExitCodePath
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --xddConfig
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --testclient
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --reportxunit
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --additional
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --no-wait
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --xdddebug
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --no-shutdown
-ОТЛАДКА - [o.app.vanessa-runner] - Добавляю шаблонную переменную addRoot, значение <C:\Program Files\OneScript\lib\add>
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --path
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --pathvanessa
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --vanessasettings
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --workspace
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --additional
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --no-wait
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --command
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --execute
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --additional
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --no-wait
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --online-file
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --additional
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --no-wait
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-name
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-user
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-pwd
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр inputPath
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр extensionName
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --updatedb
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --file
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр -f
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --extension
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --updatedb
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр extensionName
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --src
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр -s
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --out
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр -o
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --current
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг -c
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --noupdate
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр extensionName
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр outputPath
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр cfepath
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр extname
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр inputPath
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр outputPath
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --cachekey
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --onlycopy
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр inputPath
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр outputPath
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --cachekey
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --v1
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --v2
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр cfpath
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр dtpath
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-name
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-user
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-pwd
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-ver
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр ПутьСоздаваемогоХранилища
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр ЛогинАдминистратора
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр ПарольАдминистратора
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр ПутьПодключаемогоХранилища
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр Логин
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр Пароль
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --BindAlreadyBindedUser
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --NotReplaceCfg
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр ПутьПодключаемогоХранилища
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр ЛогинАдминистратора
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр ПарольАдминистратора
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-user
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-pwd
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-role
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр ПутьПодключаемогоХранилища
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр ПутьПодключаемогоХранилищаДляКопирования
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-user
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-pwd
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-user-copy
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-pwd-copy
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-name
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-user
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-pwd
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-ver
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --out
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр -o
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-name
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-user
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-pwd
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --objects
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --revised
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-name
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-user
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-pwd
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --objects
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --comment
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --keepLocked
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --force
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --src
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр -s
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --out
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр -o
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --current
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг -c
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --list
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --noupdate
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --out
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр -o
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --in
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр -i
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --current
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг -c
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --userenames
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр -v
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --versions
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --src
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр -s
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --src
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр -s
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --merge-settings
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --enable-support
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --disable-support
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --IncludeObjectsByUnresolvedRefs
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --ClearUnresolvedRefs
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --force
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --src
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр -s
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --update-settings
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --IncludeObjectsByUnresolvedRefs
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --ClearUnresolvedRefs
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --DumpListOfTwiceChangedProperties
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --force
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр Действие
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --ras
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --rac
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --db
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --cluster-admin
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --cluster-pwd
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --cluster
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --cluster-name
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --uccode
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --lockmessage
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --lockstart
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --lockstartat
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --try
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --with-nolock
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --lockendclear
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --filter
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю позиционный параметр Действие
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --ras
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --rac
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --db
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --cluster-admin
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --cluster-pwd
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --cluster
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --cluster-name
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --ras
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --rac
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --db
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --cluster-admin
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --cluster-pwd
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --cluster
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --cluster-name
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-name
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-user
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --storage-pwd
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --junitpath
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --allure-results
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --allure-results2
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --testsuitename
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-флаг --groupbymetadata
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --exception-file
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю параметр-коллекция --mode
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --junitpath
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --allure-results
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --allure-results2
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --exception-file
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --validation-result
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --prev-validation-result
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --project-url
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --EDTversion
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --workspace-location
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --project-list
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю именованный параметр --project-name-list
-ОТЛАДКА - [oscript.lib.cmdline] - ВходнойМассивПараметров <syntax-check >
-ОТЛАДКА - [oscript.lib.cmdline] - Первый параметр совпадает с именем команды. Переход в режим обработки команд
-ОТЛАДКА - [oscript.lib.cmdline] - Разбор команды: syntax-check
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю глобальный параметр: --ibconnection
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю глобальный параметр: --db-user
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю глобальный параметр: --db-pwd
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю глобальный параметр: --v8version
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю глобальный параметр: --root
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю глобальный параметр: --ordinaryapp
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю глобальный параметр: --nocacheuse
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю глобальный параметр: --ibname
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю глобальный параметр: --language
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю глобальный параметр: --locale
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю глобальный параметр: --uccode
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю глобальный параметр: --settings
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю глобальный параметр: --debuglogfile
-ОТЛАДКА - [oscript.lib.cmdline] - Добавляю глобальный параметр: --debuglog
-ОТЛАДКА - [oscript.lib.cmdline] - Попадаю в РазобратьАргументы
-ОТЛАДКА - [oscript.lib.cmdline] - Сбрасываю параметр-флаг: --groupbymetadata
-ОТЛАДКА - [oscript.lib.cmdline] - Сбрасываю параметр-флаг: --nocacheuse
-ОТЛАДКА - [oscript.lib.cmdline] - Сбрасываю параметр-флаг: --debuglog
-ОТЛАДКА - [oscript.lib.cmdline] - Выбран токен: 
-ОТЛАДКА - [oscript.lib.cmdline] - Закончились токены
-ОТЛАДКА - [oscript.lib.cmdline] - Трассировка РезультатРазбора:
-ОТЛАДКА - [oscript.lib.cmdline] - 		--groupbymetadata:Нет
-ОТЛАДКА - [oscript.lib.cmdline] - 		--nocacheuse:Нет
-ОТЛАДКА - [oscript.lib.cmdline] - 		--debuglog:Нет
-ОТЛАДКА - [oscript.lib.cmdline] - Трассировка РезультатКоманды.ЗначенияПараметров:
-ОТЛАДКА - [oscript.lib.cmdline] - 		--groupbymetadata:Нет
-ОТЛАДКА - [oscript.lib.cmdline] - 		--nocacheuse:Нет
-ОТЛАДКА - [oscript.lib.cmdline] - 		--debuglog:Нет
-ОТЛАДКА - [o.app.vanessa-runner] - Выполняю команду продукта syntax-check
-vanessa-runner v1.10.2
-ОТЛАДКА - [oscript.lib.commands] - РабочийКаталог: .
-ОТЛАДКА - [oscript.lib.commands] - Строка запуска <git rev-parse --show-toplevel>
-ОТЛАДКА - [oscript.lib.commands] - Полная строка запуска <cmd /c "git rev-parse --show-toplevel">
-ОТЛАДКА - [oscript.lib.commands] - Строка запуска <git rev-parse --show-toplevel>
-ОТЛАДКА - [oscript.lib.commands] - Полная строка запуска <cmd /c "git rev-parse --show-toplevel">
-ОТЛАДКА - [oscript.lib.commands] - Длина вывода 14, количество строк 2
-ОТЛАДКА - [oscript.lib.commands] - Код возврата равен 0
-ОТЛАДКА - [o.app.vanessa-runner] - Передан путь к файлу настроек <%1>
-ОТЛАДКА - [o.app.vanessa-runner] - Не задан путь к файлу настроек, использую путь по умолчанию E:/Dev/Dev001\env.json
-ОТЛАДКА - [o.app.vanessa-runner] - Читаю настройки из json-файла E:/Dev/Dev001\env.json
-ОТЛАДКА - [o.app.vanessa-runner] - Читаю из файла E:/Dev/Dev001\env.json
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--groupbymetadata> = <Да>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--exception-file> = <./tools/syntax-check-excludes.txt>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--junitpath> = <./out/syntax-check/junit/junit.xml>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--allure-results2> = <./out/syntax-check/allure>
 ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--mode> = <Массив>
 ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--ibconnection> = </FD:/Base/Dev001>
 ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--db-user> = <ci-bot>
-ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--db-pwd> = <123>
+ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--db-pwd> = <>
 ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--root> = <.>
 ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--workspace> = <.>
 ОТЛАДКА - [o.app.vanessa-runner] - Получен параметр <--v8version> = <8.3.18.1483>
@@ -686,11 +292,7 @@ vanessa-runner v1.10.2
 ОТЛАДКА - [o.app.vanessa-runner] - Дополненная строка подключения /F"D:\Base\Dev001"
 ОТЛАДКА - [o.app.vanessa-runner] - Добавляю шаблонную переменную workspaceRoot, значение <.>
 ОТЛАДКА - [o.app.vanessa-runner] - Добавляю шаблонную переменную runnerRoot, значение <C:\Program Files\OneScript\lib\vanessa-runner\src\Модули\..\..>
-ОТЛАДКА - [o.app.vanessa-runner] - Подключил вывод отладочного лога в отдельный файл C:\Users\vtereshchenko\AppData\Local\Temp\18\vrunner-4mg0cixu.r2y.log
-ОТЛАДКА - [o.app.vanessa-runner] - Проверяю путь <./out/syntax-check/junit/junit.xml>
-ОТЛАДКА - [o.app.vanessa-runner] - Определили проверяемый путь <.\out\syntax-check\junit\>
-ОТЛАДКА - [o.app.vanessa-runner] - Проверяю путь <./out/syntax-check/allure>
-ОТЛАДКА - [o.app.vanessa-runner] - Определили проверяемый путь <E:\Dev\Dev001\out\syntax-check\allure>
+ОТЛАДКА - [o.app.vanessa-runner] - Подключил вывод отладочного лога в отдельный файл C:\Users\vtereshchenko\AppData\Local\Temp\373\vrunner-4xadehg2.phy.log
 ОТЛАДКА - [oscript.lib.v8find] - Читаю конфигурационный файл C:\ProgramData\1C\1CEStart\1CEStart.cfg.
 ОТЛАДКА - [oscript.lib.v8find] - Читаю конфигурационный файл C:\Users\vtereshchenko\AppData\Roaming\1C\1CEStart\1CEStart.cfg.
 ОТЛАДКА - [oscript.lib.v8find] - Выполняем поиск расположения конфигурационного файла для учебной версии платформы.
@@ -699,12 +301,13 @@ vanessa-runner v1.10.2
 ОТЛАДКА - [oscript.lib.v8find] - Поиск платформы в <5> каталогах
 ОТЛАДКА - [oscript.lib.v8find] - Поиск версий платформы в <C:\Program Files\1Cv8>
 ОТЛАДКА - [oscript.lib.v8find] - Версия платформы не передана. Выполняю поиск в подкаталогах
-ОТЛАДКА - [oscript.lib.v8find] - Количество <5> версий платформы в под каталогах
+ОТЛАДКА - [oscript.lib.v8find] - Количество <6> версий платформы в под каталогах
 ОТЛАДКА - [oscript.lib.v8find] - Создаю версию <8.3.18.1208>
 ОТЛАДКА - [oscript.lib.v8find] - Создаю версию <8.3.18.1208_>
 ОТЛАДКА - [oscript.lib.v8find] - Создаю версию <8.3.18.1289>
 ОТЛАДКА - [oscript.lib.v8find] - Создаю версию <8.3.18.1433>
 ОТЛАДКА - [oscript.lib.v8find] - Создаю версию <8.3.18.1483>
+ОТЛАДКА - [oscript.lib.v8find] - Создаю версию <8.3.20.1674>
 ОТЛАДКА - [oscript.lib.v8find] - Поиск версий платформы в <C:\Program Files\1Cv82>
 ОТЛАДКА - [oscript.lib.v8find] - Поиск версий платформы в <C:\Program Files (x86)\1Cv8>
 ОТЛАДКА - [oscript.lib.v8find] - Версия платформы не передана. Выполняю поиск в подкаталогах
@@ -712,26 +315,26 @@ vanessa-runner v1.10.2
 ОТЛАДКА - [oscript.lib.v8find] - Поиск версий платформы в <C:\Program Files (x86)\1Cv8t>
 ОТЛАДКА - [oscript.lib.v8find] - Поиск версий платформы в <C:\Program Files (x86)\1Cv82>
 ОТЛАДКА - [oscript.lib.stream] - Кэш колонок содержит 7 колонок
-ОТЛАДКА - [oscript.lib.stream] - Установлена коллекция размером 5
+ОТЛАДКА - [oscript.lib.stream] - Установлена коллекция размером 6
 ОТЛАДКА - [oscript.lib.stream] - Сортировать СортироватьПоВерсиям
 ОТЛАДКА - [oscript.lib.stream] - Фильтровать ОбработкаОповещения
 ОТЛАДКА - [oscript.lib.stream] - ЛюбойСоответствует
 ОТЛАДКА - [oscript.lib.stream] - Прохожу по конвейеру
 ОТЛАДКА - [oscript.lib.stream] - Выполняю ячейку конвейера ВыполнитьСортировать
-ОТЛАДКА - [oscript.lib.stream] - Размер коллекции 5
+ОТЛАДКА - [oscript.lib.stream] - Размер коллекции 6
 ОТЛАДКА - [oscript.lib.stream] - ВыполнитьСортировать СортироватьПоВерсиям
 ОТЛАДКА - [oscript.lib.stream] - Выполняю ячейку конвейера ВыполнитьФильтровать
-ОТЛАДКА - [oscript.lib.stream] - Размер коллекции 5
+ОТЛАДКА - [oscript.lib.stream] - Размер коллекции 6
 ОТЛАДКА - [oscript.lib.stream] - ВыполнитьФильтровать ОбработкаОповещения
 ОТЛАДКА - [oscript.lib.stream] - Фильтровать ОбработкаОповещения
 ОТЛАДКА - [oscript.lib.stream] - ПолучитьПервый
 ОТЛАДКА - [oscript.lib.stream] - Прохожу по конвейеру
 ОТЛАДКА - [oscript.lib.stream] - Выполняю ячейку конвейера ВыполнитьФильтровать
-ОТЛАДКА - [oscript.lib.stream] - Размер коллекции 5
+ОТЛАДКА - [oscript.lib.stream] - Размер коллекции 6
 ОТЛАДКА - [oscript.lib.stream] - ВыполнитьФильтровать ОбработкаОповещения
 ОТЛАДКА - [oscript.lib.v8runner] - КлючСоединенияСБазой /F"D:\Base\Dev001"
 ОТЛАДКА - [oscript.lib.v8runner] - ИмяПользователя <ci-bot>
-ОТЛАДКА - [oscript.lib.v8runner] -  Задан пароль 123
+ОТЛАДКА - [oscript.lib.v8runner] - Пароль не задан
 ОТЛАДКА - [oscript.lib.stream] - Кэш колонок содержит 7 колонок
 ОТЛАДКА - [oscript.lib.stream] - Установлена коллекция размером 1
 ОТЛАДКА - [oscript.lib.stream] - Сортировать СортироватьПоВерсиям
@@ -752,33 +355,73 @@ vanessa-runner v1.10.2
 ОТЛАДКА - [oscript.lib.v8runner] - ИмяПользователя <ci-bot>
 ОТЛАДКА - [oscript.lib.v8runner] - Проверяю равенство КлючСоединенияСБазой() = КлючВременногоКонтекста() и Не ВременнаяБазаСуществует()
 ОТЛАДКА - [oscript.lib.v8runner] - КлючСоединенияСБазой() /F"D:\Base\Dev001"
-ОТЛАДКА - [oscript.lib.v8runner] - КлючВременногоКонтекста() /F"C:\Users\vtereshchenko\AppData\Local\Temp\18\qdpvpuci.dny.tmp\v8r_TempDB"
+ОТЛАДКА - [oscript.lib.v8runner] - КлючВременногоКонтекста() /F"C:\Users\vtereshchenko\AppData\Local\Temp\373\gzw5r0fu.qah.tmp\v8r_TempDB"
 ОТЛАДКА - [oscript.lib.v8runner] - ВременнаяБазаСуществует() Нет
 ОТЛАДКА - [oscript.lib.v8runner] - Равенство не выполняется.
-ОТЛАДКА - [oscript.lib.v8runner] - "C:\Program Files\1Cv8\8.3.18.1483\bin\1cv8.exe" DESIGNER /F"D:\Base\Dev001" /Out "C:\Users\vtereshchenko\AppData\Local\Temp\18\qdpvpuci.dny.tmp\mslpsjzs.wmk.txt" /N"ci-bot" /Lru /VLru /DisableStartupMessages /DisableStartupDialogs /CheckConfig -ConfigLogIntegrity -IncorrectReferences -ThinClient -WebClient -Server -ExternalConnection -ThickClientOrdinaryApplication -ExtendedModulesCheck -CheckUseModality -UnreferenceProcedures -UnsupportedFunctional -AllExtensions
+ОТЛАДКА - [oscript.lib.v8runner] - "C:\Program Files\1Cv8\8.3.18.1483\bin\1cv8.exe" DESIGNER /F"D:\Base\Dev001" /Out "C:\Users\vtereshchenko\AppData\Local\Temp\373\gzw5r0fu.qah.tmp\zdmblx5l.xha.txt" /N"ci-bot" /Lru /VLru /DisableStartupMessages /DisableStartupDialogs /CheckConfig -ConfigLogIntegrity -IncorrectReferences -ThinClient -WebClient -Server -ExternalConnection -ThickClientOrdinaryApplication -ExtendedModulesCheck -CheckUseModality -UnreferenceProcedures -HandlersExistence -EmptyHandlers
 ОТЛАДКА - [oscript.lib.commands] - РабочийКаталог: .
-ОТЛАДКА - [oscript.lib.commands] - Строка запуска <"C:\Program Files\1Cv8\8.3.18.1483\bin\1cv8.exe" DESIGNER /F"D:\Base\Dev001" /Out "C:\Users\vtereshchenko\AppData\Local\Temp\18\qdpvpuci.dny.tmp\mslpsjzs.wmk.txt" /N"ci-bot" /Lru /VLru /DisableStartupMessages /DisableStartupDialogs /CheckConfig -ConfigLogIntegrity -IncorrectReferences -ThinClient -WebClient -Server -ExternalConnection -ThickClientOrdinaryApplication -ExtendedModulesCheck -CheckUseModality -UnreferenceProcedures -UnsupportedFunctional -AllExtensions>
-ОТЛАДКА - [oscript.lib.commands] - Полная строка запуска <"C:\Program Files\1Cv8\8.3.18.1483\bin\1cv8.exe" DESIGNER /F"D:\Base\Dev001" /Out "C:\Users\vtereshchenko\AppData\Local\Temp\18\qdpvpuci.dny.tmp\mslpsjzs.wmk.txt" /N"ci-bot" /P"123" /Lru /VLru /DisableStartupMessages /DisableStartupDialogs /CheckConfig -ConfigLogIntegrity -IncorrectReferences -ThinClient -WebClient -Server -ExternalConnection -ThickClientOrdinaryApplication -ExtendedModulesCheck -CheckUseModality -UnreferenceProcedures -UnsupportedFunctional -AllExtensions>
-ОТЛАДКА - [oscript.lib.commands] - Строка запуска <"C:\Program Files\1Cv8\8.3.18.1483\bin\1cv8.exe" DESIGNER /F"D:\Base\Dev001" /Out "C:\Users\vtereshchenko\AppData\Local\Temp\18\qdpvpuci.dny.tmp\mslpsjzs.wmk.txt" /N"ci-bot" /Lru /VLru /DisableStartupMessages /DisableStartupDialogs /CheckConfig -ConfigLogIntegrity -IncorrectReferences -ThinClient -WebClient -Server -ExternalConnection -ThickClientOrdinaryApplication -ExtendedModulesCheck -CheckUseModality -UnreferenceProcedures -UnsupportedFunctional -AllExtensions>
-ОТЛАДКА - [oscript.lib.commands] - Полная строка запуска <"C:\Program Files\1Cv8\8.3.18.1483\bin\1cv8.exe" DESIGNER /F"D:\Base\Dev001" /Out "C:\Users\vtereshchenko\AppData\Local\Temp\18\qdpvpuci.dny.tmp\mslpsjzs.wmk.txt" /N"ci-bot" /P"123" /Lru /VLru /DisableStartupMessages /DisableStartupDialogs /CheckConfig -ConfigLogIntegrity -IncorrectReferences -ThinClient -WebClient -Server -ExternalConnection -ThickClientOrdinaryApplication -ExtendedModulesCheck -CheckUseModality -UnreferenceProcedures -UnsupportedFunctional -AllExtensions>
+ОТЛАДКА - [oscript.lib.commands] - Строка запуска <"C:\Program Files\1Cv8\8.3.18.1483\bin\1cv8.exe" DESIGNER /F"D:\Base\Dev001" /Out "C:\Users\vtereshchenko\AppData\Local\Temp\373\gzw5r0fu.qah.tmp\zdmblx5l.xha.txt" /N"ci-bot" /Lru /VLru /DisableStartupMessages /DisableStartupDialogs /CheckConfig -ConfigLogIntegrity -IncorrectReferences -ThinClient -WebClient -Server -ExternalConnection -ThickClientOrdinaryApplication -ExtendedModulesCheck -CheckUseModality -UnreferenceProcedures -HandlersExistence -EmptyHandlers>
+ОТЛАДКА - [oscript.lib.commands] - Полная строка запуска <"C:\Program Files\1Cv8\8.3.18.1483\bin\1cv8.exe" DESIGNER /F"D:\Base\Dev001" /Out "C:\Users\vtereshchenko\AppData\Local\Temp\373\gzw5r0fu.qah.tmp\zdmblx5l.xha.txt" /N"ci-bot" /Lru /VLru /DisableStartupMessages /DisableStartupDialogs /CheckConfig -ConfigLogIntegrity -IncorrectReferences -ThinClient -WebClient -Server -ExternalConnection -ThickClientOrdinaryApplication -ExtendedModulesCheck -CheckUseModality -UnreferenceProcedures -HandlersExistence -EmptyHandlers>
+ОТЛАДКА - [oscript.lib.commands] - Строка запуска <"C:\Program Files\1Cv8\8.3.18.1483\bin\1cv8.exe" DESIGNER /F"D:\Base\Dev001" /Out "C:\Users\vtereshchenko\AppData\Local\Temp\373\gzw5r0fu.qah.tmp\zdmblx5l.xha.txt" /N"ci-bot" /Lru /VLru /DisableStartupMessages /DisableStartupDialogs /CheckConfig -ConfigLogIntegrity -IncorrectReferences -ThinClient -WebClient -Server -ExternalConnection -ThickClientOrdinaryApplication -ExtendedModulesCheck -CheckUseModality -UnreferenceProcedures -HandlersExistence -EmptyHandlers>
+ОТЛАДКА - [oscript.lib.commands] - Полная строка запуска <"C:\Program Files\1Cv8\8.3.18.1483\bin\1cv8.exe" DESIGNER /F"D:\Base\Dev001" /Out "C:\Users\vtereshchenko\AppData\Local\Temp\373\gzw5r0fu.qah.tmp\zdmblx5l.xha.txt" /N"ci-bot" /Lru /VLru /DisableStartupMessages /DisableStartupDialogs /CheckConfig -ConfigLogIntegrity -IncorrectReferences -ThinClient -WebClient -Server -ExternalConnection -ThickClientOrdinaryApplication -ExtendedModulesCheck -CheckUseModality -UnreferenceProcedures -HandlersExistence -EmptyHandlers>
 ОТЛАДКА - [oscript.lib.commands] - Длина вывода 0, количество строк 1
-ОТЛАДКА - [oscript.lib.commands] - Код возврата равен 0
-ОТЛАДКА - [oscript.lib.v8runner] - Получен код возврата 0
+ОТЛАДКА - [oscript.lib.commands] - Код возврата равен 101
+ОТЛАДКА - [oscript.lib.v8runner] - Получен код возврата 101
 ОТЛАДКА - [oscript.lib.v8runner] - Это внешний файл информации: Нет
 ОТЛАДКА - [oscript.lib.v8runner] - Очищать файл информации: Да
 ОТЛАДКА - [oscript.lib.v8runner] - Удаляю файл информации 1С
 ОТЛАДКА - [oscript.lib.v8runner] - файл информации:
-Ошибок не обнаружено
+Документ.РасходнаяНакладная.Форма.ФормаДокумента.Форма Не обнаружено ссылок на процедуру: "ДатаПриИзменении"
+Документ.РасходнаяНакладная.Форма.ФормаДокумента.Форма Отсутствует обработчик:  Номер "НомерПриИзменении"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "Вопрос"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "ОткрытьЗначение"
+Обработка.КонсольЗапросов.Форма.ФормаПараметров.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.ФормаПараметров.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.ФормаВложеннойТаблицы.Форма Использование модального вызова: "ОткрытьЗначение"
+Обработка.КонсольЗапросов.Форма.ФормаВыбораСтрокиДереваЗапросов.Форма Использование модального вызова: "Предупреждение"
 
-ОТЛАДКА - [oscript.lib.v8runner] - Код возврата равен 0
-ИНФОРМАЦИЯ - [o.app.vanessa-runner] - Результат синтакс-контроля: Ошибок не обнаружено
+ОШИБКА - [oscript.lib.v8runner] - Получен ненулевой код возврата 101. Выполнение скрипта остановлено!
+ИНФОРМАЦИЯ - [o.app.vanessa-runner] - Результат синтакс-контроля: Документ.РасходнаяНакладная.Форма.ФормаДокумента.Форма Не обнаружено ссылок на процедуру: "ДатаПриИзменении"
+Документ.РасходнаяНакладная.Форма.ФормаДокумента.Форма Отсутствует обработчик:  Номер "НомерПриИзменении"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "Вопрос"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "ОткрытьЗначение"
+Обработка.КонсольЗапросов.Форма.ФормаПараметров.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.ФормаПараметров.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.ФормаВложеннойТаблицы.Форма Использование модального вызова: "ОткрытьЗначение"
+Обработка.КонсольЗапросов.Форма.ФормаВыбораСтрокиДереваЗапросов.Форма Использование модального вызова: "Предупреждение"
 
-ИНФОРМАЦИЯ - [o.app.vanessa-runner] - Проверка проекта завершена за 2с
-ОТЛАДКА - [o.app.vanessa-runner] - Чтение файла исключений ошибок из ./tools/syntax-check-excludes.txt
-ОТЛАДКА - [o.app.vanessa-runner] - Прочитано исключений: 0
-ОТЛАДКА - [o.app.vanessa-runner] - ОбработанныйЛог Ошибок не обнаружено
+ИНФОРМАЦИЯ - [o.app.vanessa-runner] - Проверка проекта завершена за 3с
+ОТЛАДКА - [o.app.vanessa-runner] - ОбработанныйЛог Документ.РасходнаяНакладная.Форма.ФормаДокумента.Форма Не обнаружено ссылок на процедуру: "ДатаПриИзменении"
+Документ.РасходнаяНакладная.Форма.ФормаДокумента.Форма Отсутствует обработчик:  Номер "НомерПриИзменении"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "Вопрос"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "ОткрытьЗначение"
+Обработка.КонсольЗапросов.Форма.ФормаПараметров.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.ФормаПараметров.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.ФормаВложеннойТаблицы.Форма Использование модального вызова: "ОткрытьЗначение"
+Обработка.КонсольЗапросов.Форма.ФормаВыбораСтрокиДереваЗапросов.Форма Использование модального вызова: "Предупреждение"
 
-ОТЛАДКА - [o.app.vanessa-runner] - ЛогПроверкиИзКонфигуратора Ошибок не обнаружено
+ОТЛАДКА - [o.app.vanessa-runner] - Ветка НЕ ГруппироватьПоМетаданным
+ОТЛАДКА - [o.app.vanessa-runner] - ОставшиесяОшибки Документ.РасходнаяНакладная.Форма.ФормаДокумента.Форма Не обнаружено ссылок на процедуру: "ДатаПриИзменении"
+Документ.РасходнаяНакладная.Форма.ФормаДокумента.Форма Отсутствует обработчик:  Номер "НомерПриИзменении"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "Вопрос"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.Форма.Форма Использование модального вызова: "ОткрытьЗначение"
+Обработка.КонсольЗапросов.Форма.ФормаПараметров.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.ФормаПараметров.Форма Использование модального вызова: "Предупреждение"
+Обработка.КонсольЗапросов.Форма.ФормаВложеннойТаблицы.Форма Использование модального вызова: "ОткрытьЗначение"
+Обработка.КонсольЗапросов.Форма.ФормаВыбораСтрокиДереваЗапросов.Форма Использование модального вызова: "Предупреждение"
 
-ИНФОРМАЦИЯ - [o.app.vanessa-runner] - Генерация отчета Allure2
-ИНФОРМАЦИЯ - [o.app.vanessa-runner] - Генерация отчета JUnit
+E:\Dev\Dev001>rem call allure generate --clean .\out\syntax-check\allure -o .\out\allure\allure-report  
+
+E:\Dev\Dev001>rem call allure open .\out\allure\allure-report 
