@@ -26,10 +26,12 @@ pipeline
     stages {
         stage("syntax-check") {
             steps {
-                try {
-                    bat "chcp 65001 \n vrunner syntax-check"
-                } catch(Exception Exc) {
-                        currentBuild.result = 'UNSTABLE'
+                script{
+                    try {
+                        bat "chcp 65001 \n vrunner syntax-check"
+                    } catch(Exception Exc) {
+                            currentBuild.result = 'UNSTABLE'
+                    }
                 }
  
             }
